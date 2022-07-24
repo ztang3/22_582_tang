@@ -53,11 +53,3 @@ def wait_for_confirmation(client, txid):
     print("Transaction {} confirmed in round {}.".format(txid, txinfo.get('confirmed-round')))
     return txinfo
 
-def generate_account_with_info():
-    sk, address = account.generate_account()
-    return sk, address
-
-if __name__ == '__main__':
-    sk, address = generate_account_with_info()
-    print(sk)
-    print(address)
